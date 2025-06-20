@@ -393,9 +393,28 @@ form{
     display: grid;
     gap:30px
 } */
+ main{
+    margin-top: 54px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ main ul{
+    width:610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+ }
+main ul li{
+    display: flex;
+    flex-direction: column;
+    gap:22px;
+}
 main ul .image{
   width: 100%;         
-  height: 28.5vh;     
+  height: 25.5vh;     
   position:relative; 
   overflow: hidden;  
 }
@@ -405,7 +424,6 @@ main ul .image img{
     object-fit: cover;
     object-position: center;
     display: block;
-
 }
 
 .para1{
@@ -468,7 +486,15 @@ main ul .image img{
 }
 .unlock{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
+}
+.unlock .para{
+    display: flex;
+    flex-direction: column;
 }
 .city .top{
     display: flex;
@@ -497,6 +523,16 @@ footer h4{
 }  
 footer ul{
     padding:10px;
+}
+footer .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px
+}
+footer .buttons .icon-button{
+   background: grey;
+   border-radius: 10px;
 }
 
 @media screen and (min-width:748px){
