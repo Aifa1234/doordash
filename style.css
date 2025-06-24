@@ -60,6 +60,12 @@ nav.sticky{
     justify-content: flex-start;
     align-items:center;
 }
+.back-buttons{
+    display:none;
+}
+.signin-saved{
+    display:none;
+}
 .sticky-button{
     /* display: flex;
     justify-content: flex-end;
@@ -95,13 +101,13 @@ nav.sticky{
    display: block;
 }   
 .heading p{ 
-    margin-top: 2px;
+    margin-top: 1px;
    font-family: var(--font);
    font-weight:bolder;
    font-size: 14px;
     color: gray;
     padding-bottom: 5px;
-    line-height: 18px;
+    line-height: 18.9px;
     letter-spacing: -0.01;
     display: block;
 } 
@@ -114,7 +120,7 @@ nav.sticky{
  .open{
     background: var(--secondary);
     font-family:var(--bold) ;
-    padding:.401em .76em; 
+    /* padding:.401em .76em;  */
     cursor: pointer;
     border: none;
     border-radius: 45px;
@@ -123,14 +129,17 @@ nav.sticky{
     white-space:nowrap; 
     position: relative;
     display:block;
-    font-weight: 800;
+    font-weight: 800; 
     text-align: center;
     width: auto;
     box-sizing: border-box;
     align-content: center; 
      max-width: 100%;
-     padding-bottom: 4px;
-     padding-top: 6px;
+    
+     /* height: 22px; */
+     line-height: 23px;
+    padding:4.4px 12.5px;
+    
 }  
 .topper{
     display: flex;
@@ -141,8 +150,6 @@ nav.sticky{
     padding-top: 0;
      margin-bottom: 6px; 
 }
-
-
 .heading{
     padding-left: 8px;
     display: flex;
@@ -165,14 +172,16 @@ nav.sticky{
      background-repeat: no-repeat;
     background-size: cover; 
     background-position:center;
-    
     height: 550px;
     position: relative;
     overflow-x: hidden;
     display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
+    align-self: center;
+    text-align: center;
+    padding-top: 176px;
 }
 .app{
   display: flex; 
@@ -180,58 +189,120 @@ nav.sticky{
   position:absolute;
   top:15px;
   right:24px;
+  padding:9px 12px;
 }
 .content {
-  position: absolute;
-  top: 145px;           
+  /* position: absolute;
+  top: 145px;            */
   display: flex;
   flex-direction: column;
   align-items: center; 
   text-align: center;
-  padding: 30px 20px; 
+  /* padding: 30px 20px;  */
   
-}
+} 
 .doordash{
     display: flex;
     align-items: center;
      gap: 8px;
+     /* margin-right: 20px; */
    
 }
-.delivery{
+/* .delivery{
     color: white;
      font-family: var(--extra);
     font-size: 32px;
     font-weight: 950;
      padding-top: 15px;
-}
-.delivery p{
+} */
+ .delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+ }
+.delivery h1{
+    margin-top: 12px;
     padding-top: 10px;
     line-height: 29px;
     padding-bottom: 19px;
+    width:70%;
+    margin-left: 20px;
+    color:white;
+    font-family: var(--bold);
+    align-items: center;
+    font-size: 32px; 
 }
-form{
+form{   
     display: flex;
     flex-direction: column;
-   
+    gap: 12px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0;
+    width:100%;
 }
 .input-wrapper {
-  position: relative;
-  width: 300px;
-  margin-left: 24px;
+  /* position: relative;
+  width: 310px;
+  margin-left: 45px; 
   margin-bottom: 10px;
-}
+  display: flex;
+  min-height: 40px;
+  box-sizing: border-box; */
+  display:flex;
+  align-items: center;
+  /* margin: 0 auto; */
+  border: 1px solid #ccc;
+  border-radius: 33px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+ 
+  width:299px;
+  padding:5px 16px;
+  max-width: 100%;
+  height: 52px;
+  margin-top: 1px;
 
+}  
+.input-wrapper1{
+    display:none;
+} 
+.input-wrapper .icon1,.input-wrapper .icon2{
+    padding-top: 7px;
+}             
 .input-wrapper input {
-    margin-left: -20px; 
-    box-sizing: border-box;
-  padding:10px 30px 10px 50px;
-  width:100%;
+    /* margin-left: -20px; 
+    /* box-sizing: border-box; */
+  /*padding:10px 30px 10px 50px; */
+  /* width:100%;
    height:52px;
    border-radius: var(--border);
    border: 2px solid white;
     outline: none;
-}
-.input-wrapper .fa-magnifying-glass {
+    margin-top: 2px;
+    font-size: 16px;line-height: 22px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box; */
+    max-width: 100%;
+    border:none;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    justify-self: center;
+    border-radius: 30px;
+    flex-grow: 1;
+    transform: translateX(8px);
+    padding-right: 0px;
+    margin: 0px 0px 4px auto;
+
+}             
+/* .input-wrapper .fa-magnifying-glass { 
    position: absolute;
   color: rgb(15, 12, 12);
    left: 10px;
@@ -243,14 +314,14 @@ form{
 .input-wrapper .fa-arrow-right {
   position: absolute;
   color: rgb(15, 12, 12);
-  right:40px;
-  /*top:18px; */
+  right:40px;  
+  
   top:50%;
   transform: translateY(-50%);
   font-size: 20px;
-  font-weight: 550;
-}
-.input-wrapper ::placeholder{
+  font-weight: 550; 
+}        */
+ .input-wrapper ::placeholder{
     font-size: 16px;
     font-weight: 700;
     font-family: var(--font);
@@ -258,13 +329,17 @@ form{
     word-spacing: 1px;
     line-height: 22px;
     letter-spacing: -0.01px;
-}
+    /* text-align: left;*/
+    padding-left: 5px; 
+    margin-top: 120px;
+} 
+ 
 .buttons{
-    padding-top:5px;
-    gap:15px;
+    margin-top: 4px ;
+    gap:12px;
     display: flex;
     position: relative;
-   
+    align-items: center;
     justify-content:center;
 }
 /* .login{
@@ -277,22 +352,25 @@ form{
 } */
 .buttons button {
   display: inline-flex;
-  padding:5px 11px;
+  padding:7px 12px;
   align-items: center;
   gap:5px;
+  font-weight: 900;
   width: auto;
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-family: var(--bold);
-  font-weight: 300;
+  font-weight: 900;
   position:relative;
   min-height:32px;
   justify-content: flex-start;
 
 }
-
+.signin-button{
+    display:none
+}
 .continue{
     display:flex;
     flex-direction: column;
@@ -314,10 +392,11 @@ form{
 .bottom-part{
     margin-top: -7px;
     display:block;
-    width:90%;
+    width:320px;
     align-self: center;
-    padding: 10px 5px;
+    padding: 11px 5px;
     font-size: 16px;
+    height: 40px;
 }
  
 .top-part {
@@ -326,18 +405,35 @@ form{
   padding-left: 12px;
   transform: translateY(-6px);
 }
-.second{
+/* .second{
     font-size: 20px;
-}
+} */
 .continue .logo{
-    padding: 12px 2px;
+    /* padding: 10px 2px; */
     height:60px ;
     width:60px;
     border-radius: 15px;
+    transform: translateY(-2px);
+   
 }
 .continue .heading h4{
-    font-size: 18px;
+    font-size: 18px; 
     font-weight: 900;
+    font-family: var(--bold);
+    /* margin-left: 0; */
+    transform: translateX(-3px);
+}
+.continue .heading{
+    margin-left:2px;
+    margin-bottom:-3px;
+}
+.continue p{
+    padding-left: 2px;
+    line-height:20px ;
+    /* letter-spacing: 1px; */
+}
+.continue .star{
+    padding:0px;
 }
 .option{
     display: flex;
@@ -345,7 +441,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 65px; 
+    margin-top: 62px; 
     /* margin-left: -55px; */
     /* gap:400px; */
     box-sizing: border-box;
@@ -366,6 +462,7 @@ form{
 .option ul{
    display: flex;
    flex-direction: column;
+   gap:2px
    /* padding: 0;
    margin: 0;
    */
@@ -391,14 +488,14 @@ form{
     box-sizing: border-box;
 }
 .option h4 {
-  margin-bottom: 3px;
+  /* margin-bottom: 2px; */
   font-family: var(--medium);
   font-size: 31px;
   font-family: 600;
   line-height: 40px;
  letter-spacing: 1px;
   display: block;
-  padding-bottom: -30px;
+  padding-bottom: -32px;
   box-sizing: border-box;
   max-width: 200px;
   
@@ -619,9 +716,9 @@ footer .buttons{
     align-items: center;
     gap:10px
 }
-foote600r .buttons .icon-button{
+footer .buttons .icon-button{
    background: grey;
-   border-radius: 10px;
+   border-radius: 10px;         
 }
 
 @media screen and (min-width:753px){
@@ -632,35 +729,203 @@ foote600r .buttons .icon-button{
         display: none;
     }
    
-     nav.sticky{
+     /* nav.sticky{
         display: none;
-     }
+     } */
      .back{
-        height:650px
+        height:650px;
+        padding-top: 24px;
      }
      .app{
         display:none
      }
-     .menu{
-        display: flex;
-        position: relative;
-        /* top: 0; */
-        display: flex;
-        align-items:self-end;
-        justify-content:flex-end;
-        z-index: 100;
-        transform: translateY(-300px);
-        
+     .delivery h1{
+        width: 100%;
+        margin-top: 230px;
+        font-size: 40px;
+        /* line-height: -5px; */
+        margin-bottom: 8px;
+        font-weight: 900;
      }
-     .menu .back-button{
+     .input-wrapper{
+        display:none;
+     }
+     .input-wrapper1{
         display:flex;
+        align-items: center;
+        border:1px solid #ccc;
+        border-radius: 33px;
+        background: #fff;
+        width:409px;
+        height:56px;
+        font-size:16px;
+        font-weight: 500;
         gap:10px;
-        margin-left: auto;
+        padding:5px 16px;
      }
-     
+     .input-wrapper1 input{
+        flex-grow: 1;
+        border:none;
+        outline: none;
+        font-size:16px;
+        font-weight: 500;
+     }
+     /* .input-wrapper1 .icon3,
+     .input-wrapper1 .icon4{
+        padding-top: 10px;
+     } */
+     .input-wrapper1 .icon3{
+        margin-left: 4.3px;
+        margin-top: 7px;
+     }
+     .input-wrapper1 .icon4{
+        background-color: var(--primary);
+        border-radius: 40px;
+        width:40px;
+        height: 40px;
+        outline:none;
+        color:white;
+        border:1px solid var(--primary);
+        margin-left: 344px;
+        position:absolute;
+     }
+     .buttons{
+        display: none;
+     }
+    /* .buttons1{
+        display:flex;
+        justify-content: flex-end;
+        padding:10px 20px;
+        background: white;
+    } */
+    .signin-button{
+        display: inline-flex;
+  padding:6.5px 12px;
+  align-items: center;
+  gap:4px;
+  font-weight: 900;
+  width: auto;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  min-height:31px;
+  justify-content: flex-start;
+  margin-top: 4px;
+    }
+ .signin-button .signin-text{
+    color:black;
+    font-family: var(--bold);
+    font-weight: 900;
+    padding-top:.900px
+ }
+ .back-buttons{
+    display:flex;
+    position:absolute;
+    right:25px;
+    top:16px;
+    gap:9px;
+     /* padding:17px 12px; */
+    /* padding:0px 15px; */
+ }  
+ .back-buttons .back-signup{
+    background: white;
+    color:grey;
+    font-size: 18px;
+    padding:6.5px 10.8px;
+    /* padding-top:6px; */
+    font-weight: 900;
+    text-align: center;
+    line-height: 27px;
+ }
+ /* .option .upper{
+    transform: scale(1.4);
+ } */
+ .option ul li {
+    gap:64px
+ }
+ .option {
+    margin-top: 56px;
+ }
+.option li img{
+    width:125px;
+    height:125px;
 }
 
-@media screen and (min-width:1024px){
+
+}           
+
+@media screen and (min-width:945px){
+    .doordash{
+        transform: scale(1.37);
+        /* margin-top: 1px; */
+        gap:8.9px;
+        padding-right: 1px;
+         /* width:120px;  */
+        /* padding-left: -4px; */
+        /* transform: translateX(-1px); */
+    }
+    .doordash .doordash-icon1{
+        width:31px;
+        height:24px;
+    }
+    /*.doordash .doordash-write{
+        width:100px;
+    } */
+     .delivery .h1{
+        font-size: 40px;
+        font-weight:900;
+        max-width: 750px;
+        /* margin-bottom: 2px; */
+     }
+     .input-wrapper1{
+        margin-top: -3px;
+     }
+     .buttons1{
+        display:none
+     }
+     .signin-saved{
+        display:flex;
+        padding:5.8px 11.5px;
+        align-items: center;
+        gap:4px;
+        font-weight: 900;
+        width:auto;
+        border-radius:25px ;
+        border:none;
+        cursor:pointer;
+        font-size:14px;
+        min-height:30px;
+        justify-content: flex-start;
+        margin-top:4px;
+     }
+    .signin-savedtext{
+        font-family: var(--bold);
+        font-weight:900;
+        padding-top: 2px;
+    }
+    .option{
+        margin-top: 100px;
+        margin-left: 15px;
+    }
+    .option ul{
+        display:flex;
+        flex-direction: row;
+        gap:100px
+    }
+    .option ul li{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .option ul img{
+        width:155px;
+        height:155px;
+    }
 
 }
-  
+@media screen and (max-width:728px){
+    .back-buttons{
+        display:none;
+    }
+}   
