@@ -531,34 +531,6 @@ form{
     flex-direction: column;
     /* max-width: 50%; */
 }
-.section1 {
-  position: relative;
-  height:300px;
-   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hand-background.avif');
-   background-size: cover;
-   background-position: center;
-   color:white;
-   text-align: center;
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- display:flex;
- flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width:100%;
-   padding:0;
-   margin:0
-}
-.section1 h2{
-    position:relative ;
-
-    font-family: var(--bold);
-    font-size: 24px;
-    font-weight: 700;
-    max-width: 80%;
-    
-}
 
 /* main ul,.help ul{
     list-style: none;
@@ -566,57 +538,119 @@ form{
     display: grid;
     gap:30px
 } */
- three{
+ .three{
     margin-top: 54px;
    display: flex;
-   justify-content: center;
-   align-items: center;
-   padding:0 20px;
-   
+   flex-direction: column;
+   /* justify-content: center;
+   align-items: center; */
+   /* margin:300px 20px;  */
+   padding:0px 20px;
+   align-items: flex-start;
+   /* margin-bottom: px; */
  }
 
 .three .image{
   width: 100%;         
-  height: 24vh;     
+  height: 180px;     
   position:relative; 
   overflow: hidden;
   display:flex;
 justify-content: center;
 align-items: bottom;
+/* margin:10px 10px; */
 }
 .three .image img{
     width:100%;
     height:100%;
     object-fit: cover;
-    object-position: center;
+    object-position: right center;
     display: block;
 }
 
-.para1{
+.three .para1{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap:20px;
+    /* gap:20px; */
 }
-.para1 h4{
+.three .para1 h4{
     font-family: var(--bold);
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top:24px;
+    margin-bottom:8px;
+    /* margin-bottom: 10px; */
+    /* letter-spacing: -0.01px; */
 }
-.para1 h5{
+.three .para1 h5{
     margin-top: 0px;
     font-family: var(--bold);
-    font-size: 20px;
+    font-size: 18px;
 }
-.para1 p{
-    font-family: var(--rubik);
-    font-size: 13px;
+.three .para1 p{
+    margin-top: 10px;
+    font-family: var(--medium);
+    font-size: 14px;
+    line-height: 20px;
+    /* font-weight: 900; */
+}
+.three-button{
+    margin-top:20px;
+    font-size: 14px;
+    /* padding:4px 12px; */
+    min-height: 32px;
+    font-family: var(--medium);
+    min-width: auto;
+    font-weight: 900;
+    word-spacing: 1.1px; 
+}
+.three-one{
+    margin-bottom: -15px;
+}
+.three-two h4{
+    transform: translateY(-1px);
+}
+.three-two p{
+   position:relative;
+   top:-10px;
+}
+.three-two .three-button{
+    position:relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.section1 {
+  position: relative;
+  height:350px;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hand-background.avif');
+   background-size: cover;
+   background-position: center;
+   color:white;
+   text-align: center;
+ /* padding: 0;
+ margin: 0; */
+ box-sizing: border-box;
+ display:flex;
+ flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+  
+}
+.section1 h2{
+    position:relative ;
+    width:60%;
+    font-family: var(--bold);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 12px;
 }
 .section1 p{
     font-family: var(--bold);
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 10px;
 }
 
@@ -905,24 +939,111 @@ footer .buttons .icon-button{
         padding-top: 2px;
     }
     .option{
-        margin-top: 100px;
-        margin-left: 15px;
+        margin-top: 105px;
+        margin-left: -65px;
     }
     .option ul{
         display:flex;
         flex-direction: row;
-        gap:100px
+        justify-content:center;
+        height: 100%;
+        -webkit-box-pack:center;
+        gap: 110px;
+        /* height:100% */
+
     }
-    .option ul li{
+    .option  ul li{
         display:flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap:0px
+        /*flex:1; 
+        text-align: center;  */
+        
     }
+    /* .option li .upper{
+        height:160px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    } */
     .option ul img{
-        width:155px;
-        height:155px;
+        width:154px;
+        height:154px;
     }
-
+    /* .option li .upper{
+        height:200px;
+        display:flex;
+        justify-content: center;
+    } */
+   
+    /* .option .para {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }  */
+    /* .option .para h4{
+        font-size: 24px;
+        margin:0;
+        padding:0;
+        min-height:40px;
+        align-self: stretch;
+    } */
+    /* .option .para p{
+        margin-top: 8px;
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+    } */
+     .para h4 {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 11px;
+        padding-top: 0px;
+     }
+    .option .para a{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        margin-top: 10px;
+        position:relative;
+        top:-1px;
+        left:-5px;
+         letter-spacing:-0.5px ;
+        /* word-spacing: 0.5px; */
+    }
+     .option ul li:nth-child(3) .upper {
+        position:relative;
+        top:20px
+    } 
+    .option .para{
+        width:90%
+    }
+     .option ul li:nth-child(3) .para h4{
+        position:relative;
+        top: 20px;
+    } 
+    .option ul li:nth-child(3) .para p{
+        position:relative;
+        top:28px;
+    
+    }
+     .option ul li:nth-child(3) .para a{
+        position:relative;
+        top:20px;
+    } 
+    .option .para p{
+        text-align: center;
+        font-size: 18px;
+        /* display:inline-block; */
+        position:relative;
+        top:7px;
+        left:-20px
+    }
 }
 @media screen and (max-width:728px){
     .back-buttons{
