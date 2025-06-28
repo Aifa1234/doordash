@@ -1292,14 +1292,29 @@ footer li a{
         font-weight: 500;
         gap:10px;
         padding:5px 16px;
+        position: relative;
      }
      .input-wrapper1 input{
         flex-grow: 1;
         border:none;
         outline: none;
         font-size:16px;
-        font-weight: 500;
+        font-weight: 900;
+        background: transparent;
+        font-family: var(--font);
      }
+      .input-wrapper ::placeholder{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font);
+    transform: translateY(2px);
+    word-spacing: 1px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    /* text-align: left;*/
+    padding-left: 5px; 
+    margin-top: 120px;
+}
      /* .input-wrapper1 .icon3,
      .input-wrapper1 .icon4{
         padding-top: 10px;
@@ -1833,6 +1848,10 @@ footer li a{
 .footer-one h4{
     text-align: left;
 }
+.icons{
+    display: flex;
+}
+
 }
 @media screen and (min-width:900px){
     .doordash{
@@ -1997,10 +2016,11 @@ footer li a{
     }
  .three-main .image{
     position: relative;
-    width: 100%;
+    width: 554;
  }
  .three-main .image img{
-    width: 100%;
+    width: 554px;
+    height:554px;
  }
 .help-heading{
     font-size: 32px;
@@ -2009,24 +2029,89 @@ footer li a{
 }
 .help-one .help-image{
     width: 100%;
-    height: 500px;
+    height: 554px;
+}
+.unlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0
 }
 .unlock-one{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.unlock-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90%;
+}
 .footer-two{
     display: flex;
     flex-direction: row;
     flex: 1 1 0%;
     justify-content: space-between;
+    margin-top: 5px;
 }
 .footer-two .get-know{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 12px;
+    gap: 80px;
+}
+.three-one .three{
+   padding:0
+}
+.section1{
+    margin: 0;
+}
+.section1 .open{
+    width:150px;
+    height:45px;
+    font-size: 18px;
+}
+.three-three .three{
+    margin-top: 35px;
+}
+.three-three .three p{
+    margin-top:20px
+}
+.three-three .three-content .open{
+    width:auto;
+}
+.help-heading{
+    padding:60px 20px 40px;
+}
+.help-heading h2{
+    line-height: 40px;
+    font-size: 32px;
+     max-width: 500px;
+}
+.help-content p{
+    margin-top: 20px;
+}
+.help-content .open{
+    margin-top: 30px;
+}
+.unlock-heading h1{
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 40px;
+}
+/* .unlock-one{
+    gap:0
+} */
+.city{
+    width:100%;
+    max-width: 1130px;
+    padding:48px 0;
+    margin:0 auto;
+
+}
+.get-know{
+    margin: 0;
 }
 }
 @media screen and (max-width:728px){
