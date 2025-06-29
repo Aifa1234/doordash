@@ -226,12 +226,19 @@ nav.sticky{
     padding-top: 10px;
     line-height: 29px;
     padding-bottom: 19px;
-    width:70%;
-    margin-left: 20px;
+  
+    /* margin-left: 20px; 
+    */
+    max-width: 350px;
+
     color:white;
-    font-family: var(--bold);
+    line-height: 28px;
+   
     align-items: center;
     font-size: 32px; 
+    font-weight: 900;
+    font-family:TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+;
 }
 form{   
     display: flex;
@@ -674,7 +681,7 @@ align-items: bottom;
 }
 .section1 h3{
     position:relative;
-    font-family: var(--extra);
+    font-family: var(--medium);
     /* font-weight: 900; */
     font-size: 18px;
     box-sizing: border-box;
@@ -683,7 +690,7 @@ align-items: bottom;
     line-height: 22px;
     text-align: center;
     text-decoration-style: solid;
-    /* letter-spacing: 0.1px;  */
+    letter-spacing: 0.1px; 
      /* margin-bottom: 10px;  */
      margin-top: 10px;
     /* padding-bottom: 20px; */
@@ -710,19 +717,18 @@ align-items: bottom;
     height:35px;
 } 
 
-/* .three-three .para1 h4{ 
+ .three-three .para1 h4{ 
     font-family: var(--bold);
     font-weight:600;
-    .. word-spacing: 0.5px;..
     
     font-size: 24px;
     line-height: 28px; 
     letter-spacing: -0.01px;
     display:block;
-    ..word-spacing: 0.5px;..
-} */
+   
+} 
  .three-three .para1{
-    max-width:90%;
+    max-width:100%;
     display:flex;
    flex-direction: column;
    /* align-self: center; */
@@ -927,6 +933,7 @@ align-items: bottom;
     margin-top: 10px;
     font-size: 14px;
     font-weight: 500;
+    /* font-family: "tt-norm"; */
     line-height: 20px;
     letter-spacing: -0.01px;
 }
@@ -935,7 +942,7 @@ align-items: bottom;
     /* width:30%;
     transform: scale(0.9); */
     font-size: 14px;
-    width: 125px;
+    width: 132px;
 }
 .city li a{
     font-family: var(--medium);
